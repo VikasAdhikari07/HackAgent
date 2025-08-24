@@ -1,0 +1,13 @@
+{
+    "id": "prun-c575aa71-d16d-4e73-95be-99db99720e36",
+    "plan_id": "plan-bf94b93f-0707-48ee-9c87-bb499284e2f7",
+    "current_step_index": 0,
+    "state": "NOT_STARTED",
+    "end_user_id": "portia:default_user",
+    "outputs": {
+        "clarifications": [],
+        "step_outputs": {},
+        "final_output": null
+    },
+    "plan_run_inputs": {}
+}

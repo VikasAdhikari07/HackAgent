@@ -1,0 +1,52 @@
+{
+    "id": "plan-be90053a-c8a3-45aa-9035-853bfe5fce87",
+    "plan_context": {
+        "query": "Original Prompt: web3 app new launch \n\n        \n        Enhanced Prompts:\n        1. Identify the core problem or objective requiring action.\n2. Select the most appropriate solution and develop a detailed plan.\n3. Document lessons learned for future reference and continuous improvement.\n",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_generator",
+            "image_understanding_tool",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Identify the current trends and core objectives in the web3 app market.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$market_research",
+            "condition": null
+        },
+        {
+            "task": "Based on the research, select the most appropriate solution and develop a detailed plan for a new web3 app launch.",
+            "inputs": [
+                {
+                    "name": "$market_research",
+                    "description": "The market research on the web3 app market."
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$solution_and_plan",
+            "condition": null
+        },
+        {
+            "task": "Based on the plan, document the lessons learned for future reference and continuous improvement.",
+            "inputs": [
+                {
+                    "name": "$solution_and_plan",
+                    "description": "The detailed plan for the web3 app launch."
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$lessons_learned",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

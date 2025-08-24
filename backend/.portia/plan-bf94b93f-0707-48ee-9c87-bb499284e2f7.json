@@ -1,0 +1,88 @@
+{
+    "id": "plan-bf94b93f-0707-48ee-9c87-bb499284e2f7",
+    "plan_context": {
+        "query": "I want to conduct comprehensive research on transformer architectures gpt4 for natural language processing. Please help me: 1. Search for recent papers and surveys on transformer models and attention mechanisms 2. Find relevant datasets like Common Crawl, OpenWebText, and GLUE for training and evaluation 3. Identify key evaluation metrics and benchmarks used in transformer research 4. Create a research methodology plan with timeline and milestones 5. Compile a list of essential tools and frameworks for implementation",
+        "tool_ids": [
+            "crawl_tool",
+            "enhance_writing_cohere",
+            "extract_tool",
+            "image_understanding_tool",
+            "portia:google:docs:get_document",
+            "portia:google:docs:get_structured_document",
+            "save_tool",
+            "search_huggingface_datasets",
+            "search_kaggle_datasets",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Search for recent papers and surveys on transformer models and attention mechanisms",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$papers_surveys",
+            "condition": null
+        },
+        {
+            "task": "Find relevant datasets like Common Crawl, OpenWebText, and GLUE for training and evaluation by searching on Hugging Face",
+            "inputs": [
+                {
+                    "name": "$papers_surveys",
+                    "description": "Recent papers and surveys on transformer models and attention mechanisms"
+                }
+            ],
+            "tool_id": "search_huggingface_datasets",
+            "output": "$huggingface_datasets",
+            "condition": null
+        },
+        {
+            "task": "Find relevant datasets like Common Crawl, OpenWebText, and GLUE for training and evaluation by searching on Kaggle",
+            "inputs": [
+                {
+                    "name": "$papers_surveys",
+                    "description": "Recent papers and surveys on transformer models and attention mechanisms"
+                }
+            ],
+            "tool_id": "search_kaggle_datasets",
+            "output": "$kaggle_datasets",
+            "condition": null
+        },
+        {
+            "task": "Identify key evaluation metrics and benchmarks used in transformer research",
+            "inputs": [
+                {
+                    "name": "$papers_surveys",
+                    "description": "Recent papers and surveys on transformer models and attention mechanisms"
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$evaluation_metrics",
+            "condition": null
+        },
+        {
+            "task": "Create a research methodology plan with timeline and milestones",
+            "inputs": [
+                {
+                    "name": "$papers_surveys",
+                    "description": "Recent papers and surveys on transformer models and attention mechanisms"
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$research_methodology",
+            "condition": null
+        },
+        {
+            "task": "Compile a list of essential tools and frameworks for implementation",
+            "inputs": [
+                {
+                    "name": "$papers_surveys",
+                    "description": "Recent papers and surveys on transformer models and attention mechanisms"
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$essential_tools",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

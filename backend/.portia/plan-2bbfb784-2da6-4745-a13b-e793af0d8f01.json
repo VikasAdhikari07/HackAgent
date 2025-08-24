@@ -1,0 +1,35 @@
+{
+    "id": "plan-2bbfb784-2da6-4745-a13b-e793af0d8f01",
+    "plan_context": {
+        "query": "Original Prompt: maketing webapp\n\n        \n        Enhanced Prompts:\n        1. Identify the core problem or objective requiring action.\n2. Brainstorm potential solutions or approaches.\n",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_generator",
+            "image_understanding_tool",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Search for a comprehensive guide on marketing a new web application, covering how to identify a target audience, conduct competitive analysis, and utilize effective marketing strategies such as content marketing, SEO, and social media.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$marketing_guide",
+            "condition": null
+        },
+        {
+            "task": "Generate a set of modern and professional images for a web application's marketing materials that convey concepts of technology, productivity, and user satisfaction.",
+            "inputs": [],
+            "tool_id": "image_generator",
+            "output": "$marketing_visuals",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

@@ -1,0 +1,49 @@
+{
+    "id": "plan-383d1b92-d8ef-439e-8eca-6910256c404a",
+    "plan_context": {
+        "query": " I need to launch a product marketing campaign for a new SaaS tool. Please help me: 1. Research our top 3 competitors and their messaging 2. Draft an email announcement for our customer list 3. Schedule a campaign launch meeting for next Tuesday at 2 PM 4. Create a plan to track email engagement",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_generator",
+            "image_understanding_tool",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Research the top 3 competitors and their messaging for a new SaaS tool.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$competitor_research",
+            "condition": null
+        },
+        {
+            "task": "Draft an email announcement for our customer list for the product marketing campaign for a new SaaS tool.",
+            "inputs": [],
+            "tool_id": "portia:google:gmail:draft_email",
+            "output": "$email_draft",
+            "condition": null
+        },
+        {
+            "task": "Schedule a campaign launch meeting for next Tuesday at 2 PM with the event title 'Campaign Launch Meeting' and description 'Meeting to launch the product marketing campaign'.",
+            "inputs": [],
+            "tool_id": "portia:google:gcalendar:create_event",
+            "output": "$meeting_scheduled",
+            "condition": null
+        },
+        {
+            "task": "Create a plan to track email engagement for the product marketing campaign.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$email_engagement_plan",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

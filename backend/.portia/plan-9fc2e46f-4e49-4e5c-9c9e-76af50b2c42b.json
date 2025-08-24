@@ -1,0 +1,99 @@
+{
+    "id": "plan-9fc2e46f-4e49-4e5c-9c9e-76af50b2c42b",
+    "plan_context": {
+        "query": "Original Prompt: SaaS product launch\n        \n        Enhanced Prompts:\n        1. I\n2.  \n3. n\n4. e\n5. e\n6. d\n7.  \n8. t\n9. o\n10.  \n11. l\n12. a\n13. u\n14. n\n15. c\n16. h\n17.  \n18. a\n19.  \n20. p\n21. r\n22. o\n23. d\n24. u\n25. c\n26. t\n27.  \n28. m\n29. a\n30. r\n31. k\n32. e\n33. t\n34. i\n35. n\n36. g\n37.  \n38. c\n39. a\n40. m\n41. p\n42. a\n43. i\n44. g\n45. n\n46.  \n47. f\n48. o\n49. r\n50.  \n51. a\n52.  \n53. n\n54. e\n55. w\n56.  \n57. S\n58. a\n59. a\n60. S\n61.  \n62. t\n63. o\n64. o\n65. l\n66. .\n67.  \n68. P\n69. l\n70. e\n71. a\n72. s\n73. e\n74.  \n75. h\n76. e\n77. l\n78. p\n79.  \n80. m\n81. e\n82. :\n",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_generator",
+            "image_understanding_tool",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Research and define the target audience for a new SaaS tool.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$target_audience_research",
+            "condition": null
+        },
+        {
+            "task": "Analyze the competitive landscape for a new SaaS tool.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$competitor_analysis",
+            "condition": null
+        },
+        {
+            "task": "Identify the most effective marketing channels to reach the target audience for the new SaaS tool.",
+            "inputs": [
+                {
+                    "name": "$target_audience_research",
+                    "description": "The research on the target audience for the new SaaS tool."
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$marketing_channels_research",
+            "condition": null
+        },
+        {
+            "task": "Generate a visually appealing and relevant image for the SaaS product launch marketing campaign.",
+            "inputs": [
+                {
+                    "name": "$target_audience_research",
+                    "description": "The research on the target audience for the new SaaS tool."
+                }
+            ],
+            "tool_id": "image_generator",
+            "output": "$promotional_image",
+            "condition": null
+        },
+        {
+            "task": "Draft a compelling product launch announcement email to be sent to the target audience.",
+            "inputs": [
+                {
+                    "name": "$target_audience_research",
+                    "description": "The research on the target audience for the new SaaS tool."
+                }
+            ],
+            "tool_id": "portia:google:gmail:draft_email",
+            "output": "$launch_email_draft",
+            "condition": null
+        },
+        {
+            "task": "Create a detailed outline for a blog post announcing the launch of the new SaaS tool, highlighting its key features and benefits.",
+            "inputs": [
+                {
+                    "name": "$target_audience_research",
+                    "description": "The research on the target audience for the new SaaS tool."
+                },
+                {
+                    "name": "$competitor_analysis",
+                    "description": "The analysis of the competitive landscape for the new SaaS tool."
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$blog_post_outline",
+            "condition": null
+        },
+        {
+            "task": "Generate a series of engaging social media posts to announce the product launch on the identified marketing channels.",
+            "inputs": [
+                {
+                    "name": "$marketing_channels_research",
+                    "description": "The research on the most effective marketing channels to reach the target audience."
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$social_media_posts",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

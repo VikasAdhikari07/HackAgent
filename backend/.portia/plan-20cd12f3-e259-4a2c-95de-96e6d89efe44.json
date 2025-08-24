@@ -1,0 +1,92 @@
+{
+    "id": "plan-20cd12f3-e259-4a2c-95de-96e6d89efe44",
+    "plan_context": {
+        "query": " I need to launch a product marketing campaign for a new SaaS tool. Please help me: 1. Research our top 3 competitors and their messaging 2. Draft an email announcement for our customer list 3. Schedule a campaign launch meeting for next Tuesday at 2 PM 4. Create a plan to track email engagement",
+        "tool_ids": [
+            "calculator_tool",
+            "crawl_tool",
+            "extract_tool",
+            "file_reader_tool",
+            "file_writer_tool",
+            "image_understanding_tool",
+            "llm_tool",
+            "map_tool",
+            "portia:google:docs:get_document",
+            "portia:google:docs:get_structured_document",
+            "portia:google:drive:search",
+            "portia:google:gcalendar:check_availability",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gcalendar:delete_event",
+            "portia:google:gcalendar:get_event_details",
+            "portia:google:gcalendar:get_events_by_properties",
+            "portia:google:gcalendar:modify_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_draft_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "portia:slack:bot:list_conversation_ids",
+            "portia:slack:bot:list_user_ids",
+            "portia:slack:bot:send_message",
+            "portia:slack:user:conversation_history",
+            "portia:slack:user:find_message",
+            "portia:tavily::search",
+            "portia:zendesk:groups:list_groups_for_user",
+            "portia:zendesk:help_center:create_article_comments",
+            "portia:zendesk:help_center:list_article_comments",
+            "portia:zendesk:help_center:list_articles_by_section",
+            "portia:zendesk:help_center:list_post_comments",
+            "portia:zendesk:help_center:search_articles",
+            "portia:zendesk:help_center:show_article",
+            "portia:zendesk:help_center:show_post",
+            "portia:zendesk:help_center:show_section",
+            "portia:zendesk:organizations:search",
+            "portia:zendesk:organizations:show",
+            "portia:zendesk:requests:list_comments",
+            "portia:zendesk:requests:search",
+            "portia:zendesk:requests:show",
+            "portia:zendesk:requests:show_comment",
+            "portia:zendesk:tickets:count",
+            "portia:zendesk:tickets:count_comments",
+            "portia:zendesk:tickets:create",
+            "portia:zendesk:tickets:list_comments",
+            "portia:zendesk:tickets:show",
+            "portia:zendesk:tickets:show_metrics",
+            "portia:zendesk:tickets:update",
+            "portia:zendesk:users:search",
+            "portia:zendesk:users:show",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Research the top 3 competitors and their messaging for a new SaaS tool.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$competitor_research",
+            "condition": null
+        },
+        {
+            "task": "Draft an email announcement for our customer list for the new SaaS tool.",
+            "inputs": [],
+            "tool_id": "portia:google:gmail:draft_email",
+            "output": "$email_draft",
+            "condition": null
+        },
+        {
+            "task": "Schedule a campaign launch meeting for the new SaaS tool for next Tuesday at 2 PM. Next Tuesday is 2025-09-02.",
+            "inputs": [],
+            "tool_id": "portia:google:gcalendar:create_event",
+            "output": "$campaign_launch_meeting",
+            "condition": null
+        },
+        {
+            "task": "Create a plan to track email engagement for the new SaaS tool's product marketing campaign.",
+            "inputs": [],
+            "tool_id": "llm_tool",
+            "output": "$email_engagement_plan",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

@@ -1,0 +1,26 @@
+{
+    "id": "prun-f0c65f78-7566-48e3-951e-dfb961052903",
+    "plan_id": "plan-20cd12f3-e259-4a2c-95de-96e6d89efe44",
+    "current_step_index": 0,
+    "state": "NEED_CLARIFICATION",
+    "end_user_id": "portia:default_user",
+    "outputs": {
+        "clarifications": [
+            {
+                "id": "clar-606de7ed-a3a6-4898-98ee-6018205708d1",
+                "plan_run_id": "prun-f0c65f78-7566-48e3-951e-dfb961052903",
+                "category": "Action",
+                "response": null,
+                "step": 0,
+                "user_guidance": "OAuth required for google: Click the link below to authenticate.",
+                "resolved": false,
+                "source": "Portia cloud tool auth",
+                "action_url": "https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=https%3A%2F%2Fapi.portialabs.ai%2Fapi%2Fv0%2Foauth%2Fgoogle%2F&client_id=1062040369470-6hqq9140gs1451mvb3fon3md1ekhnlns.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.freebusy+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.calendarlist.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify&state=APP_NAMES%3Dgoogle%253A%253Agmail%252Cgoogle%253A%253Agcalendar%26PLAN_RUN_ID%3Df0c65f78-7566-48e3-951e-dfb961052903%26END_USER_ID%3Daa96a8ec-4f65-4264-9711-f192261e4dca%26ORG_ID%3D8b0f5d14-ecfa-40f1-a060-c4834f3ee1e6%26CLARIFICATION_ID%3Dclar-606de7ed-a3a6-4898-98ee-6018205708d1%26SCOPES%3Dhttps%253A%252F%252Fwww.googleapis.com%252Fauth%252Fcalendar.freebusy%2Bhttps%253A%252F%252Fwww.googleapis.com%252Fauth%252Fcalendar.calendarlist.readonly%2Bhttps%253A%252F%252Fwww.googleapis.com%252Fauth%252Fcalendar.events%2Bhttps%253A%252F%252Fwww.googleapis.com%252Fauth%252Fgmail.modify&access_type=offline&response_type=code&prompt=consent",
+                "require_confirmation": false
+            }
+        ],
+        "step_outputs": {},
+        "final_output": null
+    },
+    "plan_run_inputs": {}
+}

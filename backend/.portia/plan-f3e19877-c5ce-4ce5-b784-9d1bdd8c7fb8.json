@@ -1,0 +1,52 @@
+{
+    "id": "plan-f3e19877-c5ce-4ce5-b784-9d1bdd8c7fb8",
+    "plan_context": {
+        "query": "Original Prompt: a web app\n        \n        Enhanced Prompts:\n        1. Identify the core problem or objective requiring action.\n2. Brainstorm potential solutions or approaches.\n3. Assign responsibilities and allocate resources.\n",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_generator",
+            "image_understanding_tool",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Use the search tool to identify the core problem or objective that a web app can solve, based on the original prompt: \"a web app\".",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$problem_identification",
+            "condition": null
+        },
+        {
+            "task": "Based on the identified problem for a web app, use the search tool to brainstorm potential solutions and approaches for its development.",
+            "inputs": [
+                {
+                    "name": "$problem_identification",
+                    "description": "The identified core problem or objective for the web app."
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$solutions_brainstorm",
+            "condition": null
+        },
+        {
+            "task": "Based on the brainstormed solutions, use the search tool to find information on how to assign responsibilities and allocate resources for the web app project.",
+            "inputs": [
+                {
+                    "name": "$solutions_brainstorm",
+                    "description": "Brainstormed solutions and approaches for the web app."
+                }
+            ],
+            "tool_id": "search_tool",
+            "output": "$resource_allocation",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

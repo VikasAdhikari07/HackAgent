@@ -1,0 +1,95 @@
+{
+    "id": "plan-9dae925f-03f7-414c-9b56-0d2598a9fe4e",
+    "plan_context": {
+        "query": "Original Prompt: new web app launch\n\n        \n        Enhanced Prompts:\n        1. Identify the core problem or objective.\n2. Brainstorm potential solutions or strategies.\n3. Evaluate each option based on feasibility and impact.\n",
+        "tool_ids": [
+            "calculator_tool",
+            "crawl_tool",
+            "extract_tool",
+            "file_reader_tool",
+            "file_writer_tool",
+            "image_understanding_tool",
+            "llm_tool",
+            "map_tool",
+            "portia:google:docs:get_document",
+            "portia:google:docs:get_structured_document",
+            "portia:google:drive:search",
+            "portia:google:gcalendar:check_availability",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gcalendar:delete_event",
+            "portia:google:gcalendar:get_event_details",
+            "portia:google:gcalendar:get_events_by_properties",
+            "portia:google:gcalendar:modify_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_draft_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "portia:slack:bot:list_conversation_ids",
+            "portia:slack:bot:list_user_ids",
+            "portia:slack:bot:send_message",
+            "portia:slack:user:conversation_history",
+            "portia:slack:user:find_message",
+            "portia:tavily::search",
+            "portia:zendesk:groups:list_groups_for_user",
+            "portia:zendesk:help_center:create_article_comments",
+            "portia:zendesk:help_center:list_article_comments",
+            "portia:zendesk:help_center:list_articles_by_section",
+            "portia:zendesk:help_center:list_post_comments",
+            "portia:zendesk:help_center:search_articles",
+            "portia:zendesk:help_center:show_article",
+            "portia:zendesk:help_center:show_post",
+            "portia:zendesk:help_center:show_section",
+            "portia:zendesk:organizations:search",
+            "portia:zendesk:organizations:show",
+            "portia:zendesk:requests:list_comments",
+            "portia:zendesk:requests:search",
+            "portia:zendesk:requests:show",
+            "portia:zendesk:requests:show_comment",
+            "portia:zendesk:tickets:count",
+            "portia:zendesk:tickets:count_comments",
+            "portia:zendesk:tickets:create",
+            "portia:zendesk:tickets:list_comments",
+            "portia:zendesk:tickets:show",
+            "portia:zendesk:tickets:show_metrics",
+            "portia:zendesk:tickets:update",
+            "portia:zendesk:users:search",
+            "portia:zendesk:users:show",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Identify the core problem or objective for a new web app launch.",
+            "inputs": [],
+            "tool_id": "llm_tool",
+            "output": "$problem_identification",
+            "condition": null
+        },
+        {
+            "task": "Brainstorm potential solutions or strategies for launching the new web app, taking into account the identified core problem.",
+            "inputs": [
+                {
+                    "name": "$problem_identification",
+                    "description": "The identified core problem or objective for the new web app launch."
+                }
+            ],
+            "tool_id": "llm_tool",
+            "output": "$solutions_brainstorm",
+            "condition": null
+        },
+        {
+            "task": "Evaluate each of the brainstormed options based on its feasibility and impact for the new web app launch.",
+            "inputs": [
+                {
+                    "name": "$solutions_brainstorm",
+                    "description": "The brainstormed potential solutions or strategies for the new web app launch."
+                }
+            ],
+            "tool_id": "llm_tool",
+            "output": "$evaluation",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

@@ -1,0 +1,56 @@
+{
+    "id": "plan-38fb844f-ff57-47e0-adbd-a182ce1486fb",
+    "plan_context": {
+        "query": "Original Prompt: SaaS product launch\n        \n        Enhanced Prompts:\n        1. I need to launch a product marketing campaign for a new SaaS tool. Please help me:\n",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_generator",
+            "image_understanding_tool",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Search for a comprehensive guide on how to launch a product marketing campaign for a new SaaS tool.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$saas_launch_guide",
+            "condition": null
+        },
+        {
+            "task": "Identify the most effective marketing channels for promoting a new SaaS product.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$marketing_channels",
+            "condition": null
+        },
+        {
+            "task": "Search for templates for a SaaS product launch marketing plan.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$launch_plan_templates",
+            "condition": null
+        },
+        {
+            "task": "Find examples of successful SaaS product launch announcement emails and blog posts.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$launch_announcement_examples",
+            "condition": null
+        },
+        {
+            "task": "Generate a visually appealing and abstract hero image suitable for a SaaS product launch website.",
+            "inputs": [],
+            "tool_id": "image_generator",
+            "output": "$hero_image",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

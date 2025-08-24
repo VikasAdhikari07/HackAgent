@@ -1,0 +1,23 @@
+{
+    "id": "plan-e875b691-094b-4a95-92cf-169d70a11ce3",
+    "plan_context": {
+        "query": "Create a beautiful image of a futuristic city with flying cars and green buildings for my social media campaign",
+        "tool_ids": [
+            "calculator_tool",
+            "image_generator",
+            "llm_tool",
+            "search_tool",
+            "weather_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Create a beautiful image of a futuristic city with flying cars and green buildings for my social media campaign",
+            "inputs": [],
+            "tool_id": "image_generator",
+            "output": "$image_path",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}
