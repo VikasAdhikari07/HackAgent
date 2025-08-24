@@ -1,0 +1,34 @@
+{
+    "steps": [
+      {
+        "task": "Search for the latest SpaceX news from the past 48 hours using the search tool.",
+        "inputs": [],
+        "tool_id": "search_tool",
+        "output": "$spacex_news_results"
+      },
+      {
+        "task": "Summarize the top 3 developments from the SpaceX news articles.",
+        "inputs": [
+          {
+            "name": "$spacex_news_results",
+            "description": "The list of SpaceX news articles returned by the search tool."
+          }
+        ],
+        "tool_id": "llm_tool",
+        "output": "$spacex_summary",
+        "condition": "if $spacex_news_results contains at least 3 articles"
+      },
+      {
+        "task": "Email Avrana (avrana@kern.ai) a summary of the top 3 SpaceX developments with the subject 'Latest SpaceX Updates'.",
+        "inputs": [
+          {
+            "name": "$spacex_summary",
+            "description": "The summary of the top 3 SpaceX developments."
+          }
+        ],
+        "tool_id": "portia:google:gmail:send_email",
+        "output": "$email_sent",
+        "condition": "if $spacex_news_results contains at least 3 articles"
+      }
+    ]
+  }

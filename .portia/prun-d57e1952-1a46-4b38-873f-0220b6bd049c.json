@@ -1,0 +1,21 @@
+{
+    "id": "prun-d57e1952-1a46-4b38-873f-0220b6bd049c",
+    "plan_id": "plan-02ab0967-3fd8-4194-b0a1-3ae735f30b40",
+    "current_step_index": 0,
+    "state": "COMPLETE",
+    "end_user_id": "portia:default_user",
+    "outputs": {
+        "clarifications": [],
+        "step_outputs": {
+            "$generated_image": {
+                "value": "generated_images/59ff65d0cb844185b6784cc5a56ad8d3.png",
+                "summary": "generated_images/59ff65d0cb844185b6784cc5a56ad8d3.png"
+            }
+        },
+        "final_output": {
+            "value": "generated_images/59ff65d0cb844185b6784cc5a56ad8d3.png",
+            "summary": "An image of a futuristic city with flying cars and green buildings was generated for your social media campaign. The output is generated_images/59ff65d0cb844185b6784cc5a56ad8d3.png."
+        }
+    },
+    "plan_run_inputs": {}
+}
