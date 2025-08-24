@@ -21,7 +21,11 @@ print(PORTIA_API_KEY)
 # Strongly recommended: set provider + keys explicitly
 google_config = Config.from_default(
     llm_provider=LLMProvider.GOOGLE,
-    default_model="google/gemini-2.5-flash",
+    default_model="google/gemini-2.0-flash",
+    planning_model="google/gemini-2.0-flash", 
+    execution_model="google/gemini-2.0-flash",
+    introspection_model="google/gemini-2.0-flash",
+    summarizer_model="google/gemini-2.0-flash",
     google_api_key=GOOGLE_API_KEY,
     storage_class=StorageClass.DISK,
     portia_api_key=PORTIA_API_KEY,
@@ -40,8 +44,11 @@ portia = Portia(
     tools=complete_tool_registry,
 )
 
-plan_run = portia.run(
+plan_run = portia.plan(
     "Create a beautiful image of a futuristic city with flying cars and green buildings for my social media campaign"
 )
 
-print(plan_run.model_dump_json(indent=2))
+
+import json
+print((plan_run.model_dump()))
+print(type(plan_run))

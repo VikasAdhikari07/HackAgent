@@ -1,0 +1,59 @@
+{
+    "id": "plan-18353d68-08dd-45e4-acbe-69a57d22d30f",
+    "plan_context": {
+        "query": "I want to research transformer architectures for NLP. Help me find datasets, recent papers, and evaluation methodologies. Create a research plan for studying computer vision models for medical image analysis I need to research reinforcement learning algorithms for robotics applicationsHelp me design a study on the effectiveness of different LLM fine-tuning techniques.",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_understanding_tool",
+            "portia:google:docs:get_document",
+            "portia:google:docs:get_structured_document",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Find datasets for transformer architectures in NLP.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$transformer_datasets",
+            "condition": null
+        },
+        {
+            "task": "Find recent papers on transformer architectures for NLP.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$transformer_papers",
+            "condition": null
+        },
+        {
+            "task": "Find evaluation methodologies for transformer architectures in NLP.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$transformer_evaluation",
+            "condition": null
+        },
+        {
+            "task": "Create a research plan for studying computer vision models for medical image analysis.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$cv_models_plan",
+            "condition": null
+        },
+        {
+            "task": "Research reinforcement learning algorithms for robotics applications.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$rl_algorithms",
+            "condition": null
+        },
+        {
+            "task": "Design a study on the effectiveness of different LLM fine-tuning techniques.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$llm_finetuning_study",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}

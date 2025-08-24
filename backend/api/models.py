@@ -98,7 +98,7 @@ class ToolsModel(models.Model):
         unique=True,
         help_text="ID of the tool (e.g., google-search, wikipedia, etc.)"
     )
-    sector = models.ForeignKey(Sector, on_delete=models.CASCADE, help_text="Sector of the tool")
+    sectors = models.ManyToManyField(Sector, help_text="Sectors that can use this tool")
     description = models.TextField(
         blank=True,
         help_text="Detailed description of what this tool does"

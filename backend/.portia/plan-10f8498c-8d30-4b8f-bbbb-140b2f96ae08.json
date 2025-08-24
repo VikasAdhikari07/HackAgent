@@ -1,0 +1,48 @@
+{
+    "id": "plan-10f8498c-8d30-4b8f-bbbb-140b2f96ae08",
+    "plan_context": {
+        "query": " I need to launch a product marketing campaign for a new SaaS tool. Please help me: 1. Research our top 3 competitors and their messaging 2. Draft an email announcement for our customer list 3. Schedule a campaign launch meeting for next Tuesday at 2 PM 4. Create a plan to track email engagement",
+        "tool_ids": [
+            "crawl_tool",
+            "extract_tool",
+            "image_understanding_tool",
+            "portia:google:gcalendar:create_event",
+            "portia:google:gmail:draft_email",
+            "portia:google:gmail:search_email",
+            "portia:google:gmail:send_email",
+            "portia:google:sheets:get_spreadsheet",
+            "search_tool"
+        ]
+    },
+    "steps": [
+        {
+            "task": "Research the top 3 competitors and their messaging for a new SaaS tool.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$competitor_research",
+            "condition": null
+        },
+        {
+            "task": "Draft an email announcement for our customer list for the new SaaS tool.",
+            "inputs": [],
+            "tool_id": "portia:google:gmail:draft_email",
+            "output": "$email_draft",
+            "condition": null
+        },
+        {
+            "task": "Schedule a campaign launch meeting for next Tuesday at 2 PM for the new SaaS tool.",
+            "inputs": [],
+            "tool_id": "portia:google:gcalendar:create_event",
+            "output": "$campaign_launch_meeting",
+            "condition": null
+        },
+        {
+            "task": "Create a plan to track email engagement for the new SaaS tool.",
+            "inputs": [],
+            "tool_id": "search_tool",
+            "output": "$email_engagement_plan",
+            "condition": null
+        }
+    ],
+    "plan_inputs": []
+}
