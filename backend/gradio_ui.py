@@ -4,6 +4,7 @@ import json
 from typing import List, Optional
 import time
 
+
 class StrategyBuilder:
     """
     A class to handle the business logic for the AI Strategy Builder application.
@@ -11,7 +12,7 @@ class StrategyBuilder:
     """
     def __init__(self):
         """Initializes the StrategyBuilder with the API base URL and empty state variables."""
-        self.api_base_url = "http://127.0.0.1:8000/api"
+        self.api_base_url = "https://hackagent.onrender.com/api"
         self.spaces = []
         self.enhanced_prompts = []
         self.generated_plan = ""
@@ -595,14 +596,14 @@ def main():
         
         # Test API connection on startup
         try:
-            test_response = requests.get("http://127.0.0.1:8000/api/sectors/", timeout=5)
+            test_response = requests.get("https://hackagent.onrender.com/api/sectors/", timeout=5)
             if test_response.status_code == 200:
                 print("✅ API server connection: SUCCESS")
             else:
                 print(f"⚠️ API server responding with status: {test_response.status_code}")
         except requests.exceptions.ConnectionError:
             print("❌ API server connection: FAILED")
-            print("💡 Make sure your API server is running on http://127.0.0.1:8000")
+            print("💡 Make sure your API server is running on https://hackagent.onrender.com")
         
         print("=" * 60)
         print("🌐 GRADIO INTERFACE LAUNCHING...")
