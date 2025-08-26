@@ -42,6 +42,9 @@ This is for the builders, the makers, the people who want to **ship fast and ite
 
 ---
 
+## D Video
+[DEMO](demo.mp4)
+
 ## 🛠️ How We Built It
 
 ### 🏗️ Architecture Overview
