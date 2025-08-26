@@ -43,7 +43,8 @@ This is for the builders, the makers, the people who want to **ship fast and ite
 ---
 
 ## Demo Video
-[DEMO](demo.mp4)
+--> [DEMO VIDEO](demo.mp4)
+--> [DEMO LINK](https://drive.google.com/file/d/1A9Dakmx3Yn3y8fixaqhNt2cgE43HEhZl/view?usp=sharing)
 
 ## 🛠️ How We Built It
 
